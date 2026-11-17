@@ -251,6 +251,12 @@
     "width": 70,
     "height": 720
   },
+  "hairpin": {
+    "title": "Hairpin",
+    "group": "projects",
+    "width": 61,
+    "height": 720
+  },
   "howler": {
     "title": "Howler",
     "group": "projects",
