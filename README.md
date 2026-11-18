@@ -12,11 +12,14 @@ English · [中文文档](README.zh-CN.md)
 
 [![Discord](https://spine.stv.pm/badge/discord.svg)](https://discord.gg/PwZDHH4mv3)
 
-<img src="docs/images/shelf.jpg" alt="A shelf of CD jewel case spines for AI apps" width="100%" />
+
 
 </div>
 
 One image URL puts a spine, or a whole shelf, in a README or GitHub profile.
+
+<img src="docs/images/shelf.jpg" alt="A shelf of CD jewel case spines for AI apps" width="100%" />
+
 This repository holds everything behind it:
 
 | | |
