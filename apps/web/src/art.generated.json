@@ -59,6 +59,12 @@
     "width": 82,
     "height": 720
   },
+  "deepseek-harness": {
+    "title": "deepseek harness",
+    "group": "ai",
+    "width": 69,
+    "height": 720
+  },
   "dify": {
     "title": "Dify",
     "group": "ai",
@@ -87,6 +93,12 @@
     "title": "Gemini",
     "group": "ai",
     "width": 89,
+    "height": 720
+  },
+  "hermes-agent": {
+    "title": "hermes agent",
+    "group": "ai",
+    "width": 62,
     "height": 720
   },
   "huggingface": {
@@ -387,6 +399,12 @@
     "title": "Deno",
     "group": "stack",
     "width": 85,
+    "height": 720
+  },
+  "dia": {
+    "title": "dia",
+    "group": "stack",
+    "width": 71,
     "height": 720
   },
   "directus": {
