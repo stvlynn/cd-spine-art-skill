@@ -7,6 +7,10 @@
 
 English · [中文文档](README.zh-CN.md)
 
+[![stvlynn/spines](https://spine.stv.pm/gh/stvlynn/spines.svg)](https://github.com/stvlynn/spines)
+·
+[Join the FirstLab Discord](https://discord.gg/PwZDHH4mv3)
+
 <img src="docs/images/shelf.jpg" alt="A shelf of CD jewel case spines for AI apps" width="100%" />
 
 </div>
