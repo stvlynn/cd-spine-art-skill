@@ -25,6 +25,20 @@ This repository holds everything behind it:
 
 Live at [spine.stv.pm](https://spine.stv.pm).
 
+## The skill
+
+`cd-spine-art` guides an agent from verified brand marks through art direction
+to a cropped, upright spine. It needs an image tool that accepts reference
+images, plus Python 3 and Pillow for cropping.
+
+```bash
+npx skills add stvlynn/spines
+```
+
+Then ask for what you want:
+
+> Use `$cd-spine-art` to make a CD spine for React and add it to `art/stack/`.
+
 ## Use a badge
 
 ```md
@@ -120,20 +134,6 @@ hour. To raise that to 5,000, store a token with no scopes:
 ```bash
 pnpm --filter @repo/web exec wrangler secret put GITHUB_TOKEN
 ```
-
-## The skill
-
-`cd-spine-art` guides an agent from verified brand marks through art direction
-to a cropped, upright spine. It needs an image tool that accepts reference
-images, plus Python 3 and Pillow for cropping.
-
-```bash
-npx skills add stvlynn/spines
-```
-
-Then ask for what you want:
-
-> Use `$cd-spine-art` to make a CD spine for React and add it to `art/stack/`.
 
 ## Credits
 

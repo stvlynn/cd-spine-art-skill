@@ -25,6 +25,19 @@
 
 访问 [spine.stv.pm](https://spine.stv.pm)。
 
+## Skill
+
+`cd-spine-art` 引导 Agent 完成从核实品牌标识、美术指导到裁切竖立的整个流程。
+它需要一个支持参考图的生图工具,以及用于裁切的 Python 3 和 Pillow。
+
+```bash
+npx skills add stvlynn/spines
+```
+
+然后直接提需求:
+
+> 用 `$cd-spine-art` 给 React 做一张 CD 侧脊,放进 `art/stack/`。
+
 ## 使用徽章
 
 ```md
@@ -118,19 +131,6 @@ token 可以提高到 5,000 次:
 ```bash
 pnpm --filter @repo/web exec wrangler secret put GITHUB_TOKEN
 ```
-
-## Skill
-
-`cd-spine-art` 引导 Agent 完成从核实品牌标识、美术指导到裁切竖立的整个流程。
-它需要一个支持参考图的生图工具,以及用于裁切的 Python 3 和 Pillow。
-
-```bash
-npx skills add stvlynn/spines
-```
-
-然后直接提需求:
-
-> 用 `$cd-spine-art` 给 React 做一张 CD 侧脊,放进 `art/stack/`。
 
 ## 致谢
 
