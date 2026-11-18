@@ -9,6 +9,7 @@
       "*.ts",
       "!**/fonts/*.json",
       "!**/*.generated.json",
+      "!**/*.generated.ts",
       "!**/sunbeam.css",
       "!**/*.md",
       "!**/*.yaml",

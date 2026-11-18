@@ -5,8 +5,9 @@
   "scripts": {
     "dev": "wrangler dev",
     "deploy": "wrangler deploy",
-    "typecheck": "tsc -p .",
-    "art": "node scripts/build-art.ts"
+    "typecheck": "node scripts/build-presets.ts && tsc -p .",
+    "presets": "node scripts/build-presets.ts",
+    "art": "node scripts/build-presets.ts && node scripts/build-art.ts"
   },
   "dependencies": {
     "@repo/spine": "workspace:*",
@@ -15,6 +16,7 @@
   "devDependencies": {
     "@cloudflare/workers-types": "^5.20261116.1",
     "@types/node": "^22.0.0",
+    "ajv": "^8.20.0",
     "sharp": "^0.34.0",
     "wrangler": "^4.162.0"
   }

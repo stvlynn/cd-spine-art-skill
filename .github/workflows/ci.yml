@@ -16,6 +16,8 @@ jobs:
           node-version: 22
           cache: pnpm
       - run: pnpm install --frozen-lockfile
+      # Check before other commands have a chance to regenerate the registry.
+      - run: pnpm presets --check
       - run: pnpm lint
       - run: pnpm typecheck
       - run: pnpm test

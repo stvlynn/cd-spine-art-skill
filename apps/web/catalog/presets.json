@@ -1,0 +1,846 @@
+{
+  "$schema": "./presets.schema.json",
+  "presets": [
+    {
+      "slug": "anthropic",
+      "group": "ai",
+      "theme": "paper",
+      "paint": "accent"
+    },
+    {
+      "slug": "claude",
+      "group": "ai",
+      "theme": "clay",
+      "paint": "paper"
+    },
+    {
+      "slug": "googlegemini",
+      "group": "ai",
+      "theme": "midnight",
+      "paint": "accent",
+      "title": "Gemini",
+      "aliases": ["gemini"]
+    },
+    {
+      "slug": "githubcopilot",
+      "group": "ai",
+      "theme": "noir",
+      "title": "Copilot",
+      "aliases": ["copilot"]
+    },
+    {
+      "slug": "cursor",
+      "group": "ai",
+      "theme": "steel"
+    },
+    {
+      "slug": "windsurf",
+      "group": "ai",
+      "theme": "midnight"
+    },
+    {
+      "slug": "deepseek",
+      "group": "ai",
+      "theme": "midnight",
+      "paint": "paper"
+    },
+    {
+      "slug": "mistralai",
+      "group": "ai",
+      "theme": "signal",
+      "paint": "paper",
+      "aliases": ["mistral"]
+    },
+    {
+      "slug": "perplexity",
+      "group": "ai",
+      "theme": "midnight",
+      "paint": "accent"
+    },
+    {
+      "slug": "meta",
+      "group": "ai",
+      "theme": "paper",
+      "paint": "accent",
+      "title": "Meta AI"
+    },
+    {
+      "slug": "ollama",
+      "group": "ai",
+      "theme": "paper"
+    },
+    {
+      "slug": "huggingface",
+      "group": "ai",
+      "theme": "signal",
+      "paint": "paper",
+      "aliases": ["hf"]
+    },
+    {
+      "slug": "replicate",
+      "group": "ai",
+      "theme": "noir"
+    },
+    {
+      "slug": "openrouter",
+      "group": "ai",
+      "theme": "steel"
+    },
+    {
+      "slug": "langchain",
+      "group": "ai",
+      "theme": "grid",
+      "paint": "accent"
+    },
+    {
+      "slug": "langgraph",
+      "group": "ai",
+      "theme": "grid",
+      "paint": "accent"
+    },
+    {
+      "slug": "crewai",
+      "group": "ai",
+      "theme": "candy",
+      "paint": "paper"
+    },
+    {
+      "slug": "dify",
+      "group": "ai",
+      "theme": "midnight",
+      "paint": "accent"
+    },
+    {
+      "slug": "n8n",
+      "group": "ai",
+      "theme": "candy",
+      "paint": "paper"
+    },
+    {
+      "slug": "v0",
+      "group": "ai",
+      "theme": "noir"
+    },
+    {
+      "slug": "replit",
+      "group": "ai",
+      "theme": "signal",
+      "paint": "paper"
+    },
+    {
+      "slug": "modelcontextprotocol",
+      "group": "ai",
+      "theme": "paper",
+      "aliases": ["mcp"]
+    },
+    {
+      "slug": "elevenlabs",
+      "group": "ai",
+      "theme": "noir",
+      "aliases": ["11labs"]
+    },
+    {
+      "slug": "cline",
+      "group": "ai",
+      "theme": "steel"
+    },
+    {
+      "slug": "trae",
+      "group": "ai",
+      "theme": "noir",
+      "paint": "accent"
+    },
+    {
+      "slug": "coze",
+      "group": "ai",
+      "theme": "midnight",
+      "paint": "paper"
+    },
+    {
+      "slug": "poe",
+      "group": "ai",
+      "theme": "candy",
+      "paint": "paper"
+    },
+    {
+      "slug": "qdrant",
+      "group": "ai",
+      "theme": "midnight",
+      "paint": "accent"
+    },
+    {
+      "slug": "milvus",
+      "group": "ai",
+      "theme": "grid",
+      "paint": "accent"
+    },
+    {
+      "slug": "kagi",
+      "group": "ai",
+      "theme": "midnight",
+      "paint": "accent"
+    },
+    {
+      "slug": "typescript",
+      "group": "stack",
+      "theme": "grid",
+      "paint": "accent",
+      "aliases": ["ts"]
+    },
+    {
+      "slug": "javascript",
+      "group": "stack",
+      "theme": "signal",
+      "paint": "paper",
+      "aliases": ["js"]
+    },
+    {
+      "slug": "python",
+      "group": "stack",
+      "theme": "grid",
+      "paint": "accent",
+      "aliases": ["py"]
+    },
+    {
+      "slug": "rust",
+      "group": "stack",
+      "theme": "clay"
+    },
+    {
+      "slug": "go",
+      "group": "stack",
+      "theme": "grid",
+      "paint": "accent",
+      "aliases": ["golang"]
+    },
+    {
+      "slug": "swift",
+      "group": "stack",
+      "theme": "clay",
+      "paint": "paper"
+    },
+    {
+      "slug": "kotlin",
+      "group": "stack",
+      "theme": "candy",
+      "paint": "paper"
+    },
+    {
+      "slug": "cplusplus",
+      "group": "stack",
+      "theme": "grid",
+      "paint": "accent",
+      "aliases": ["cpp"]
+    },
+    {
+      "slug": "dotnet",
+      "group": "stack",
+      "theme": "midnight",
+      "paint": "paper"
+    },
+    {
+      "slug": "openjdk",
+      "group": "stack",
+      "theme": "clay",
+      "title": "Java",
+      "aliases": ["java"]
+    },
+    {
+      "slug": "php",
+      "group": "stack",
+      "theme": "paper",
+      "paint": "accent"
+    },
+    {
+      "slug": "ruby",
+      "group": "stack",
+      "theme": "clay",
+      "paint": "paper"
+    },
+    {
+      "slug": "elixir",
+      "group": "stack",
+      "theme": "midnight",
+      "paint": "paper"
+    },
+    {
+      "slug": "zig",
+      "group": "stack",
+      "theme": "signal",
+      "paint": "paper"
+    },
+    {
+      "slug": "lua",
+      "group": "stack",
+      "theme": "midnight",
+      "paint": "paper"
+    },
+    {
+      "slug": "haskell",
+      "group": "stack",
+      "theme": "midnight",
+      "paint": "paper"
+    },
+    {
+      "slug": "dart",
+      "group": "stack",
+      "theme": "grid",
+      "paint": "accent"
+    },
+    {
+      "slug": "webassembly",
+      "group": "stack",
+      "theme": "midnight",
+      "paint": "paper",
+      "aliases": ["wasm"]
+    },
+    {
+      "slug": "react",
+      "group": "stack",
+      "theme": "midnight",
+      "paint": "accent"
+    },
+    {
+      "slug": "nextdotjs",
+      "group": "stack",
+      "theme": "noir",
+      "aliases": ["next", "nextjs"]
+    },
+    {
+      "slug": "vuedotjs",
+      "group": "stack",
+      "theme": "paper",
+      "paint": "accent",
+      "aliases": ["vue"]
+    },
+    {
+      "slug": "nuxt",
+      "group": "stack",
+      "theme": "paper",
+      "paint": "accent"
+    },
+    {
+      "slug": "svelte",
+      "group": "stack",
+      "theme": "clay",
+      "paint": "paper"
+    },
+    {
+      "slug": "angular",
+      "group": "stack",
+      "theme": "noir"
+    },
+    {
+      "slug": "astro",
+      "group": "stack",
+      "theme": "candy",
+      "paint": "paper"
+    },
+    {
+      "slug": "nodedotjs",
+      "group": "stack",
+      "theme": "grid",
+      "paint": "accent",
+      "aliases": ["node", "nodejs"]
+    },
+    {
+      "slug": "bun",
+      "group": "stack",
+      "theme": "paper"
+    },
+    {
+      "slug": "deno",
+      "group": "stack",
+      "theme": "noir"
+    },
+    {
+      "slug": "hono",
+      "group": "stack",
+      "theme": "clay",
+      "paint": "paper"
+    },
+    {
+      "slug": "django",
+      "group": "stack",
+      "theme": "grid",
+      "paint": "accent"
+    },
+    {
+      "slug": "fastapi",
+      "group": "stack",
+      "theme": "grid",
+      "paint": "accent"
+    },
+    {
+      "slug": "flask",
+      "group": "stack",
+      "theme": "paper",
+      "paint": "accent"
+    },
+    {
+      "slug": "laravel",
+      "group": "stack",
+      "theme": "paper",
+      "paint": "accent"
+    },
+    {
+      "slug": "rubyonrails",
+      "group": "stack",
+      "theme": "clay",
+      "paint": "paper",
+      "aliases": ["rails"]
+    },
+    {
+      "slug": "springboot",
+      "group": "stack",
+      "theme": "grid",
+      "paint": "accent",
+      "aliases": ["spring"]
+    },
+    {
+      "slug": "nestjs",
+      "group": "stack",
+      "theme": "noir",
+      "paint": "accent",
+      "aliases": ["nest"]
+    },
+    {
+      "slug": "express",
+      "group": "stack",
+      "theme": "paper"
+    },
+    {
+      "slug": "remix",
+      "group": "stack",
+      "theme": "noir"
+    },
+    {
+      "slug": "gatsby",
+      "group": "stack",
+      "theme": "candy",
+      "paint": "paper"
+    },
+    {
+      "slug": "solid",
+      "group": "stack",
+      "theme": "grid",
+      "paint": "accent"
+    },
+    {
+      "slug": "qwik",
+      "group": "stack",
+      "theme": "midnight",
+      "paint": "accent"
+    },
+    {
+      "slug": "htmx",
+      "group": "stack",
+      "theme": "paper",
+      "paint": "accent"
+    },
+    {
+      "slug": "trpc",
+      "group": "stack",
+      "theme": "grid",
+      "paint": "accent"
+    },
+    {
+      "slug": "flutter",
+      "group": "stack",
+      "theme": "midnight",
+      "paint": "paper"
+    },
+    {
+      "slug": "electron",
+      "group": "stack",
+      "theme": "steel"
+    },
+    {
+      "slug": "tauri",
+      "group": "stack",
+      "theme": "signal",
+      "paint": "paper"
+    },
+    {
+      "slug": "tailwindcss",
+      "group": "stack",
+      "theme": "midnight",
+      "paint": "accent",
+      "aliases": ["tailwind"]
+    },
+    {
+      "slug": "vite",
+      "group": "stack",
+      "theme": "candy",
+      "paint": "paper"
+    },
+    {
+      "slug": "prisma",
+      "group": "stack",
+      "theme": "steel"
+    },
+    {
+      "slug": "pytorch",
+      "group": "stack",
+      "theme": "clay",
+      "paint": "paper"
+    },
+    {
+      "slug": "tensorflow",
+      "group": "stack",
+      "theme": "signal",
+      "paint": "paper"
+    },
+    {
+      "slug": "jupyter",
+      "group": "stack",
+      "theme": "paper",
+      "paint": "accent"
+    },
+    {
+      "slug": "docker",
+      "group": "stack",
+      "theme": "grid",
+      "paint": "accent"
+    },
+    {
+      "slug": "kubernetes",
+      "group": "stack",
+      "theme": "midnight",
+      "paint": "paper",
+      "aliases": ["k8s"]
+    },
+    {
+      "slug": "cloudflare",
+      "group": "stack",
+      "theme": "signal",
+      "paint": "paper"
+    },
+    {
+      "slug": "cloudflareworkers",
+      "group": "stack",
+      "theme": "signal",
+      "paint": "paper",
+      "title": "Workers",
+      "aliases": ["workers"]
+    },
+    {
+      "slug": "vercel",
+      "group": "stack",
+      "theme": "noir"
+    },
+    {
+      "slug": "github",
+      "group": "stack",
+      "theme": "steel"
+    },
+    {
+      "slug": "gitlab",
+      "group": "stack",
+      "theme": "noir",
+      "paint": "accent"
+    },
+    {
+      "slug": "grafana",
+      "group": "stack",
+      "theme": "noir",
+      "paint": "accent"
+    },
+    {
+      "slug": "sentry",
+      "group": "stack",
+      "theme": "midnight",
+      "paint": "paper"
+    },
+    {
+      "slug": "datadog",
+      "group": "stack",
+      "theme": "midnight",
+      "paint": "paper"
+    },
+    {
+      "slug": "posthog",
+      "group": "stack",
+      "theme": "paper"
+    },
+    {
+      "slug": "git",
+      "group": "stack",
+      "theme": "paper",
+      "paint": "accent"
+    },
+    {
+      "slug": "linux",
+      "group": "stack",
+      "theme": "signal",
+      "paint": "paper"
+    },
+    {
+      "slug": "nginx",
+      "group": "stack",
+      "theme": "grid",
+      "paint": "accent"
+    },
+    {
+      "slug": "terraform",
+      "group": "stack",
+      "theme": "midnight",
+      "paint": "paper"
+    },
+    {
+      "slug": "postgresql",
+      "group": "stack",
+      "theme": "midnight",
+      "paint": "paper",
+      "aliases": ["postgres"]
+    },
+    {
+      "slug": "mysql",
+      "group": "stack",
+      "theme": "grid",
+      "paint": "accent"
+    },
+    {
+      "slug": "sqlite",
+      "group": "stack",
+      "theme": "grid",
+      "paint": "accent"
+    },
+    {
+      "slug": "redis",
+      "group": "stack",
+      "theme": "clay",
+      "paint": "paper"
+    },
+    {
+      "slug": "mongodb",
+      "group": "stack",
+      "theme": "paper",
+      "paint": "accent"
+    },
+    {
+      "slug": "supabase",
+      "group": "stack",
+      "theme": "noir"
+    },
+    {
+      "slug": "neon",
+      "group": "stack",
+      "theme": "noir",
+      "paint": "accent"
+    },
+    {
+      "slug": "upstash",
+      "group": "stack",
+      "theme": "noir",
+      "paint": "accent"
+    },
+    {
+      "slug": "firebase",
+      "group": "stack",
+      "theme": "signal",
+      "paint": "paper"
+    },
+    {
+      "slug": "graphql",
+      "group": "stack",
+      "theme": "candy",
+      "paint": "paper"
+    },
+    {
+      "slug": "wagtail",
+      "group": "stack",
+      "theme": "midnight",
+      "paint": "paper"
+    },
+    {
+      "slug": "strapi",
+      "group": "stack",
+      "theme": "candy",
+      "paint": "paper"
+    },
+    {
+      "slug": "directus",
+      "group": "stack",
+      "theme": "steel"
+    },
+    {
+      "slug": "payloadcms",
+      "group": "stack",
+      "theme": "noir",
+      "title": "Payload",
+      "aliases": ["payload"]
+    },
+    {
+      "slug": "sanity",
+      "group": "stack",
+      "theme": "noir"
+    },
+    {
+      "slug": "ghost",
+      "group": "stack",
+      "theme": "paper"
+    },
+    {
+      "slug": "wordpress",
+      "group": "stack",
+      "theme": "paper",
+      "paint": "accent",
+      "aliases": ["wp"]
+    },
+    {
+      "slug": "drupal",
+      "group": "stack",
+      "theme": "midnight",
+      "paint": "paper"
+    },
+    {
+      "slug": "contentful",
+      "group": "stack",
+      "theme": "paper",
+      "paint": "accent"
+    },
+    {
+      "slug": "pnpm",
+      "group": "stack",
+      "theme": "signal",
+      "paint": "paper"
+    },
+    {
+      "slug": "figma",
+      "group": "stack",
+      "theme": "candy",
+      "paint": "paper"
+    },
+    {
+      "slug": "linear",
+      "group": "stack",
+      "theme": "midnight",
+      "paint": "accent"
+    },
+    {
+      "slug": "jira",
+      "group": "stack",
+      "theme": "paper",
+      "paint": "accent"
+    },
+    {
+      "slug": "asana",
+      "group": "stack",
+      "theme": "candy",
+      "paint": "paper"
+    },
+    {
+      "slug": "airtable",
+      "group": "stack",
+      "theme": "grid",
+      "paint": "accent"
+    },
+    {
+      "slug": "miro",
+      "group": "stack",
+      "theme": "signal",
+      "paint": "paper"
+    },
+    {
+      "slug": "discord",
+      "group": "stack",
+      "theme": "midnight",
+      "paint": "paper"
+    },
+    {
+      "slug": "zapier",
+      "group": "stack",
+      "theme": "signal",
+      "paint": "paper"
+    },
+    {
+      "slug": "make",
+      "group": "stack",
+      "theme": "midnight",
+      "paint": "paper"
+    },
+    {
+      "slug": "stripe",
+      "group": "stack",
+      "theme": "midnight",
+      "paint": "paper"
+    },
+    {
+      "slug": "clerk",
+      "group": "stack",
+      "theme": "candy",
+      "paint": "paper"
+    },
+    {
+      "slug": "resend",
+      "group": "stack",
+      "theme": "noir"
+    },
+    {
+      "slug": "postman",
+      "group": "stack",
+      "theme": "clay",
+      "paint": "paper"
+    },
+    {
+      "slug": "notion",
+      "group": "stack",
+      "theme": "paper"
+    },
+    {
+      "slug": "obsidian",
+      "group": "stack",
+      "theme": "midnight",
+      "paint": "paper"
+    },
+    {
+      "slug": "neovim",
+      "group": "stack",
+      "theme": "noir",
+      "aliases": ["nvim"]
+    },
+    {
+      "slug": "zedindustries",
+      "group": "stack",
+      "theme": "midnight",
+      "paint": "paper",
+      "title": "Zed",
+      "aliases": ["zed"]
+    },
+    {
+      "slug": "jetbrains",
+      "group": "stack",
+      "theme": "noir"
+    },
+    {
+      "slug": "raycast",
+      "group": "stack",
+      "theme": "candy",
+      "paint": "paper"
+    },
+    {
+      "slug": "warp",
+      "group": "stack",
+      "theme": "midnight",
+      "paint": "accent"
+    },
+    {
+      "slug": "ghostty",
+      "group": "stack",
+      "theme": "midnight",
+      "paint": "paper"
+    },
+    {
+      "slug": "apple",
+      "group": "stack",
+      "theme": "steel"
+    },
+    {
+      "slug": "android",
+      "group": "stack",
+      "theme": "grid",
+      "paint": "accent"
+    }
+  ]
+}

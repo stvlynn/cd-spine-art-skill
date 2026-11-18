@@ -37,6 +37,8 @@ art/
 - Title spelled exactly; no captions or text the subject does not own.
 - Yours to contribute, and for a brand, faithful to its real mark.
 
-To add a tool to the catalog itself, add a row to
-[`apps/web/src/presets.ts`](../apps/web/src/presets.ts); it is typeset until
-its print arrives.
+To add a tool to the catalog itself, add an entry to
+[`apps/web/catalog/presets.json`](../apps/web/catalog/presets.json), run
+`pnpm presets`, and commit the generated registry too. It is typeset until
+its print arrives. See the [catalog guide](../README.md#maintain-the-badge-catalog)
+for fields and validation rules.

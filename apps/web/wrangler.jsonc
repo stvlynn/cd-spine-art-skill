@@ -4,7 +4,10 @@
   "account_id": "cd649aedbd3b02589e9eab812c0944d3",
   "routes": [{ "pattern": "spine.stv.pm", "custom_domain": true }],
   "main": "src/index.ts",
-  "build": { "command": "node scripts/build-site.ts" },
+  "build": {
+    "command": "node scripts/build-site.ts",
+    "watch_dir": ["src", "catalog", "scripts"]
+  },
   "compatibility_date": "2026-11-01",
   // Files in public/ are served straight from the edge; the Worker only sees
   // requests that match no file, which is every badge route.

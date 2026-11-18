@@ -9,11 +9,12 @@
   "scripts": {
     "dev": "pnpm --filter @repo/web dev",
     "deploy": "pnpm --filter @repo/web run deploy",
-    "test": "vitest run",
+    "test": "pnpm presets && vitest run",
     "typecheck": "pnpm -r typecheck",
     "lint": "biome check .",
     "format": "biome check --write .",
     "fonts": "pnpm --filter @repo/spine fonts",
+    "presets": "pnpm --filter @repo/web presets",
     "art": "pnpm --filter @repo/web art"
   },
   "devDependencies": {
