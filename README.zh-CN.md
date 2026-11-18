@@ -35,7 +35,7 @@
 
 | URL | 绘制内容 |
 | --- | --- |
-| `/badge/<name>,<name>.svg` | 常用 AI 工具和技术栈的目录条目([完整列表](apps/web/src/presets.ts))。支持简写:`ts`、`py`、`k8s`、`next`。 |
+| `/badge/<name>,<name>.svg` | 常用 AI 工具和技术栈的目录条目([完整列表](apps/web/catalog/presets.json))。支持简写:`ts`、`py`、`k8s`、`next`。 |
 | `/spine/<title>.svg` | 任意标题,排版生成。 |
 | `/gh/<owner>/<repo>.svg` | 一个仓库,带 star 数和主要语言的图标。 |
 | `/gh/<owner>.svg` | 一个账号 star 最多的仓库,排成一排。`count` 取 1–12,默认 8。 |
@@ -79,8 +79,37 @@ pnpm dev
 | `pnpm test` | 渲染器和 Worker 的测试。 |
 | `pnpm typecheck` | 两个包的 TypeScript 检查。 |
 | `pnpm lint` | Biome 检查。`pnpm format` 自动修复。 |
+| `pnpm presets` | 校验目录并生成静态注册表。`pnpm presets --check` 检查生成文件是否过期。 |
 | `pnpm art` | 重新生成 `art/` 的网页版本和 `art/WANTED.md`。 |
 | `pnpm fonts` | 重新生成渲染器排字用的字形图集。 |
+
+## 维护徽章目录
+
+在 [`apps/web/catalog/presets.json`](apps/web/catalog/presets.json) 中新增或修改条目。
+每个条目必填 `slug`、`group`（`ai` 或 `stack`）和 `theme`，可选
+`paint`、`title`、`icon` 和 `aliases`。`icon` 是 Simple Icons 的 slug，默认与
+条目 slug 相同；`title` 默认取图标标题。`paint: "paper"` 将品牌色用于纸面，
+`"accent"` 则用于装饰。数组顺序就是目录的展示顺序。
+
+```json
+{
+  "slug": "typescript",
+  "group": "stack",
+  "theme": "grid",
+  "paint": "accent",
+  "aliases": ["ts"]
+}
+```
+
+执行 `pnpm presets`，同时提交 JSON 和 `apps/web/src/presets.generated.ts`。
+生成文件不应手工编辑。[JSON Schema](apps/web/catalog/presets.schema.json)
+提供编辑器校验；生成器还会检查主题和已安装的图标是否存在，以及所有 slug 和别名
+是否冲突。配置错误时会报错，生成文件不会被覆盖。
+
+测试、类型检查、`pnpm art` 和 Wrangler 开发或部署流程都会重新生成注册表。
+开发时 Wrangler 同时监听目录配置和源码。CI 首先执行 `pnpm presets --check`，
+检查是否遗漏了生成文件的更新。Worker 只打包静态图标导入，校验逻辑仅在构建时运行。
+目录外的独立插画继续由 art manifest 管理。
 
 ## 部署
 

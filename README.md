@@ -35,7 +35,7 @@ Add `?layout=stack` to lay several down, or `?layout=row` to stand one up.
 
 | URL | Draws |
 | --- | --- |
-| `/badge/<name>,<name>.svg` | Catalog entries for common AI tools and tech stacks ([the list](apps/web/src/presets.ts)). Short names work: `ts`, `py`, `k8s`, `next`. |
+| `/badge/<name>,<name>.svg` | Catalog entries for common AI tools and tech stacks ([the list](apps/web/catalog/presets.json)). Short names work: `ts`, `py`, `k8s`, `next`. |
 | `/spine/<title>.svg` | Any title, typeset. |
 | `/gh/<owner>/<repo>.svg` | A repository, with its stars and the mark of its main language. |
 | `/gh/<owner>.svg` | An account's most-starred repositories on a shelf. `count` 1–12, default 8. |
@@ -80,8 +80,40 @@ pnpm dev
 | `pnpm test` | Renderer and Worker tests. |
 | `pnpm typecheck` | TypeScript, both packages. |
 | `pnpm lint` | Biome. `pnpm format` fixes. |
+| `pnpm presets` | Validate the catalog and regenerate its static registry. `pnpm presets --check` checks for stale output. |
 | `pnpm art` | Rebuild the web copies of `art/` and `art/WANTED.md`. |
 | `pnpm fonts` | Rebuild the glyph atlases the renderer sets text from. |
+
+## Maintain the badge catalog
+
+Edit [`apps/web/catalog/presets.json`](apps/web/catalog/presets.json) to add or
+update a badge. Each entry declares its `slug`, `group` (`ai` or `stack`) and
+`theme`; optional fields are `paint`, `title`, `icon` and `aliases`. `icon` is a
+Simple Icons slug and defaults to the badge slug; `title` defaults to the icon's
+title. `paint: "paper"` applies the brand color to the paper, while `"accent"`
+uses it for the artwork. Array order is the catalog's display order.
+
+```json
+{
+  "slug": "typescript",
+  "group": "stack",
+  "theme": "grid",
+  "paint": "accent",
+  "aliases": ["ts"]
+}
+```
+
+Run `pnpm presets` and commit both the JSON and
+`apps/web/src/presets.generated.ts`. Do not edit the generated registry. The
+[JSON Schema](apps/web/catalog/presets.schema.json) provides editor validation;
+the generator also verifies themes, installed icon slugs, and uniqueness across
+all badge slugs and aliases. Invalid configuration fails before output is written.
+
+Tests, typechecking, `pnpm art`, and Wrangler dev/deploy regenerate the registry.
+During development Wrangler watches the catalog as well as the source files.
+CI runs `pnpm presets --check` first to catch uncommitted generated changes.
+Only static icon imports enter the Worker bundle; catalog validation runs at
+build time. Prints outside the badge catalog continue to use the art manifest.
 
 ## Deploy
 
