@@ -263,6 +263,24 @@
     "width": 70,
     "height": 720
   },
+  "gezi": {
+    "title": "Gezi",
+    "group": "projects",
+    "width": 53,
+    "height": 720
+  },
+  "hairpin": {
+    "title": "Hairpin",
+    "group": "projects",
+    "width": 61,
+    "height": 720
+  },
+  "howler": {
+    "title": "Howler",
+    "group": "projects",
+    "width": 59,
+    "height": 720
+  },
   "memoh": {
     "title": "Memoh",
     "group": "projects",
