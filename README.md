@@ -7,6 +7,8 @@
 
 English · [中文文档](README.zh-CN.md)
 
+
+join our Discord group!⬇️ 加入我们的 Discord 群组
 [![Discord](https://spine.stv.pm/badge/discord.svg)](https://discord.gg/PwZDHH4mv3)
 
 <img src="docs/images/shelf.jpg" alt="A shelf of CD jewel case spines for AI apps" width="100%" />
