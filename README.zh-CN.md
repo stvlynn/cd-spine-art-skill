@@ -7,9 +7,7 @@
 
 [English](README.md) · 中文文档
 
-[![stvlynn/spines](https://spine.stv.pm/gh/stvlynn/spines.svg)](https://github.com/stvlynn/spines)
-·
-[加入 FirstLab Discord](https://discord.gg/PwZDHH4mv3)
+[![Discord](https://spine.stv.pm/badge/discord.svg)](https://discord.gg/PwZDHH4mv3)
 
 <img src="docs/images/shelf.jpg" alt="AI 应用的 CD 盒侧脊收藏架" width="100%" />
 
